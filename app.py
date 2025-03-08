@@ -4,20 +4,20 @@ import streamlit as st
 
 #Difine the menu of restaurant 
 menu = {
-  "Pizza":40,\n
-  "Pasta":50,\n
-  "Burger":60,\n
-  "Salad":70,\n
-  "Coffee":80
+  "Pizza":40,
+  "Pasta":50,
+  "Burger":60,
+  "Salad":70,
+  "Coffee":80,
 }
 
 #Greet
 st.write("Welcome to Pyrestaurant")
 #Print menu
 st.write("""
-   Pizza:Rs-40
-   Pasta:Rs-50
-   Burger:Rs-60
-   Salad:Rs-70
+   Pizza:Rs-40\n
+   Pasta:Rs-50\n
+   Burger:Rs-60\n
+   Salad:Rs-70\n
    Coffee:Rs-80
 """)
