@@ -4,11 +4,11 @@ import streamlit as st
 
 #Difine the menu of restaurant 
 menu = {
-  "Pizza":40,
-  "Pasta":50,
-  "Burger":60,
-  "Salad":70,
-  "Coffee":80,
+  "Pizza":40,\n
+  "Pasta":50,\n
+  "Burger":60,\n
+  "Salad":70,\n
+  "Coffee":80
 }
 
 #Greet
