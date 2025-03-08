@@ -34,7 +34,7 @@ item_1 = st.text_input("Enter Your first order")
 if item_1 in menu:
     order_total += menu[item_1]
     st.write(f"Your item {item_1} has been added to your order.")
-else:
+if item_1 not in menu:
     st.write("Sorry, that item is not on the menu.")
 
 # Display the total order amount
