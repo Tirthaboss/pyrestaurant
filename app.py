@@ -1,30 +1,41 @@
 # Import python module 
 import streamlit as st
-#A restaurant management system in python.
 
-#Difine the menu of restaurant 
+# A restaurant management system in python.
+
+# Define the menu of restaurant 
 menu = {
-  "Pizza":40,
-  "Pasta":50,
-  "Burger":60,
-  "Salad":70,
-  "Coffee":80,
+    "Pizza": 40,
+    "Pasta": 50,
+    "Burger": 60,
+    "Salad": 70,
+    "Coffee": 80,
 }
 
-#Greet
+# Greet
 st.write("Welcome to Pyrestaurant")
-#Print menu
+
+# Print menu
 st.write("""
-   Pizza:Rs-40,\n
-   Pasta:Rs-50,\n
-   Burger:Rs-60,\n
-   Salad:Rs-70,\n
-   Coffee:Rs-80
+   **Menu:**
+   - Pizza: Rs-40
+   - Pasta: Rs-50
+   - Burger: Rs-60
+   - Salad: Rs-70
+   - Coffee: Rs-80
 """)
-# Order deta 
+
+# Order details 
 order_total = 0
-#Get input order
-item_1 = text_input("Enter Your first order")
+
+# Get input order
+item_1 = st.text_input("Enter Your first order")
+
 if item_1 in menu:
-  order_total += menu[item_1]
-  st.write(f"Your item {item_1} has been added to yur order")
+    order_total += menu[item_1]
+    st.write(f"Your item {item_1} has been added to your order.")
+else:
+    st.write("Sorry, that item is not on the menu.")
+
+# Display the total order amount
+st.write(f"Your current order total is: Rs-{order_total}")
