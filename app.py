@@ -1,3 +1,5 @@
+# Import python module 
+import streamlit as st
 #A restaurant management system in python.
 
 #Difine the menu of restaurant 
@@ -10,9 +12,9 @@ menu = {
 }
 
 #Greet
-print("Welcome to Pyrestaurant")
+st.write("Welcome to Pyrestaurant")
 #Print menu
-print("""
+st.write("""
    Pizza:Rs-40
    Pasta:Rs-50
    Burger:Rs-60
