@@ -30,7 +30,8 @@ order_total = 0
 
 # Get input order
 item_1 = st.text_input("Enter Your first order")
-
+if item_1 == "":
+    print("Bad")
 if item_1 in menu:
     order_total += menu[item_1]
     st.write(f"Your item {item_1} has been added to your order.")
